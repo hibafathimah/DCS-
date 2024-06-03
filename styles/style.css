@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+box-sizing: border-box;
+padding: 0%;
+margin: 0%;
+}
+
+/* main container */
+
+.main-container{
+    max-width: 100%;
+    height: 100lvh;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #22733A;
+    max-width: 100%;
+    height: 130px;
+}
+.navbar-list{
+    list-style: none;
+    display: flex;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 40px;
+}
+.logo-one{
+    width: 350px;
+}
+.nav-item{
+    padding-top: 10px;
+}
+.nav-item:hover{
+    font-weight: 600;
+}
+.navbar-btn{
+    background-color: #739D31;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.fa-chevron-down{
+    color: white;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.dropdown-content a {
+    color: #22733A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #eefff4;
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+/*section-one*/
+.section-one{
+    position: relative;
+    width: 100%;
+    height: 290px;
+    background-color: #22733A;
+    display: flex;
+    justify-content: space-between;
+}
+.logowm{
+    width: 250px;
+    height: 260px;
+    margin-left: 10px;
+}
+.logos{
+    padding-right: 220px;   
+}
+.g-logo-1{
+    width: 60px;
+}
+.g-logo-2{
+    width: 100px;
+}
+.bg-img-container{
+    width: 100%;
+    position: relative;
+}
+.bg-img-container .img-bg{
+    margin-left: 14%;
+    position: absolute;
+    margin-top: -200px;
+}
+.rectangle{
+    margin-left: 11%;
+    position: absolute;
+    margin-top: -40px;
+}
+.transparent-bg{
+    width: 850px;
+    height: 74px;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: -40px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    color: white;
+    font-family: 'poppins',sans-serif;
+    padding-left: 35px;
+    line-height: 30px;
+}
+.p-1{
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 4px;
+}
+.p-2{
+    font-weight: 400;
+    font-size: 36px;
+}
+.img-s2{
+    display: flex;
+    flex-direction: row;
+}
