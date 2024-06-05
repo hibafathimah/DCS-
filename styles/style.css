@@ -121,7 +121,8 @@ margin: 0%;
     margin-left: 10px;
 }
 .logos {
-    padding-right: 220px;   
+    padding-right: 220px;  
+    padding-top: 30px; 
 }
 .g-logo-1 {
     width: 60px;
@@ -136,7 +137,7 @@ margin: 0%;
 .bg-img-container .img-bg {
     margin-left: 14%;
     position: absolute;
-    margin-top: -200px;
+    margin-top: -160px;
 }
 .rectangle {
     margin-left: 11%;
@@ -224,6 +225,8 @@ margin: 0%;
     .logos {
         padding-right: 0;
         display: flex;
+        flex-direction: row;
+        gap: 30px;
         justify-content: center;
         margin-bottom: 20px;
     }
