@@ -8,52 +8,107 @@
     <script src="https://kit.fontawesome.com/869f2ae957.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <nav class="navbar">
-            <div>
+
+        <!-- <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="fa fa-bars"></span>
+            </div>
+            <div class="logo-container">
                 <img src="./images/Logo.png" alt="" class="logo-one">
             </div>
-            <div>
+            <div class="navbar-list-container">
                 <ul class="navbar-list">
-                        <li class="nav-item">Home</li>
-                        <li class="nav-item">About <span class="fa-solid fa-chevron-down"></span>
-                            <div class="dropdown-content">
-                                <a href="#">Our Story</a>
-                                <a href="#">Mission & Vision</a>
-                                <a href="#">Leadership</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">Academics <span class="fa-solid fa-chevron-down"></span>
-                            <div class="dropdown-content">
-                                <a href="#">Programs</a>
-                                <a href="#">Departments</a>
-                                <a href="#">Research</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">Facilities <span class="fa-solid fa-chevron-down"></span>
-                            <div class="dropdown-content">
-                                <a href="#">Library</a>
-                                <a href="#">Labs</a>
-                                <a href="#">Sports</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">Admission <span class="fa-solid fa-chevron-down"></span>
-                            <div class="dropdown-content">
-                                <a href="#">Undergraduate</a>
-                                <a href="#">Graduate</a>
-                                <a href="#">International</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">Others <span class="fa-solid fa-chevron-down"></span>
-                            <div class="dropdown-content">
-                                <a href="#">Alumni</a>
-                                <a href="#">Events</a>
-                                <a href="#">Careers</a>
-                            </div>
-                        </li>
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">About <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Our Story</a>
+                            <a href="#">Mission & Vision</a>
+                            <a href="#">Leadership</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Academics <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Programs</a>
+                            <a href="#">Departments</a>
+                            <a href="#">Research</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Facilities <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Library</a>
+                            <a href="#">Labs</a>
+                            <a href="#">Sports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Admission <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Undergraduate</a>
+                            <a href="#">Graduate</a>
+                            <a href="#">International</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Others <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Alumni</a>
+                            <a href="#">Events</a>
+                            <a href="#">Careers</a>
+                        </div>
+                    </li>
+                    <li><button class="navbar-btn">Student Portal</button></li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="fa fa-bars"></span>
+            </div>
+            <div class="logo-container">
+                <img src="./images/Logo.png" alt="" class="logo-one">
+            </div>
+            <div class="navbar-list-container">
+                <ul class="navbar-list">
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">About <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Our Story</a>
+                            <a href="#">Mission & Vision</a>
+                            <a href="#">Leadership</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Academics <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Programs</a>
+                            <a href="#">Departments</a>
+                            <a href="#">Research</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Facilities <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Library</a>
+                            <a href="#">Labs</a>
+                            <a href="#">Sports</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Admission <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Undergraduate</a>
+                            <a href="#">Graduate</a>
+                            <a href="#">International</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">Others <span class="fa-solid fa-chevron-down"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Alumni</a>
+                            <a href="#">Events</a>
+                            <a href="#">Careers</a>
+                        </div>
+                    </li>
                     <li><button class="navbar-btn">Student Portal</button></li>
                 </ul>
             </div>
         </nav>
+
         <div class="section-one">
             <img src="./images/Logo WM.png" alt="" class="logowm">
             <div class="logos">
@@ -391,6 +446,25 @@
                 <div class="cp-right">© 2024. Department of Computer Science. All Rights Reserved. Designed by <b>Tungston Labs </b>.</div>
             </div>
         </footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.navbar-list-container');
+        const logo = document.querySelector('.logo-container');
+        const menuIcon = document.querySelector('.menu-icon .fa');
+        
+        menu.classList.toggle('active');
+        logo.classList.toggle('hidden');
+        
+        if (menu.classList.contains('active')) {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-times');
+        } else {
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        }
+    }
+</script>
 
 </body>
 </html>
